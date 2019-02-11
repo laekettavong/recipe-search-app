@@ -1,0 +1,18 @@
+export default {
+    EVENT_CLICK: 'click',
+    EVENT_PRESS: 'press',
+    EVENT_SUBMIT: 'submit',
+    EVENT_LOAD: 'load',
+    ELEMENT_SEARCH: '.search',
+    ELEMENT_RESULTS: '.results',
+    ELEMENT_LOADER: '.loader',
+    ELEMENT_SEARCH_FIELD: '.search__field',
+    ELEMENT_LIKES_FIELD: '.likes__field',
+    ELEMENT_LIKES_LIST: '.likes__list',
+    ELEMENT_RESULTS_LIST: '.results__list',
+    ELEMENT_SHOPPING_LIST: '.shopping__list',
+    ELEMENT_SHOPPING_ITEM: '.shopping__item',
+    ELEMENT_SHOPPING_DELETE: '.shopping__delete',
+    ELEMENT_RESULTS_PAGE: '.results__pages',
+    ELEMENT_RECIPES: '.recipe',
+}
