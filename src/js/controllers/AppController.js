@@ -36,18 +36,15 @@ export default (() => {
         }
 
         static async controlSearch() {
-            console.log("XXXXXX1", state, state.search)
             const query = SearchView.getInput()
             if (query) {
                 state.search = new Search(query)
-                console.log("XXXXXX2", state)
                 SearchView.clearInput()
                 SearchView.clearResults()
                 Loader.renderLoader(Elements.searchRes)
                 try {
                     await state.search.getResults()
                     Loader.clearLoader()
-                    console.log("XXXXXX3", state.search.result)
                     SearchView.renderResults(state.search.result)
                 } catch (err) {
                     console.log('Something went wrong with search', err)
